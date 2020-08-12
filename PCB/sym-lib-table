@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name pihat_cooling-rescue)(type Legacy)(uri ${KIPRJMOD}/pihat_cooling-rescue.lib)(options "")(descr ""))
+)
