@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "15 nov 2012"
+Date "2020-08-18"
 Rev ""
 Comp "https://github.com/vanbwodonk/pihat-cooling"
 Comment1 ""
