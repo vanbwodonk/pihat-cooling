@@ -7,7 +7,7 @@ Sheet 1 1
 Title ""
 Date "15 nov 2012"
 Rev ""
-Comp ""
+Comp "https://github.com/vanbwodonk/pihat-cooling"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -84,113 +84,19 @@ Wire Wire Line
 	2100 1800 2200 1800
 Connection ~ 2100 2600
 Wire Wire Line
-	2200 1500 1050 1500
-Wire Wire Line
-	1050 1600 2200 1600
-Wire Wire Line
-	1050 1700 2200 1700
-Wire Wire Line
 	2200 1900 1050 1900
 Wire Wire Line
 	1050 2000 2200 2000
 Wire Wire Line
 	1050 2100 2200 2100
 Wire Wire Line
-	2200 2300 1050 2300
-Wire Wire Line
-	1050 2400 2200 2400
-Wire Wire Line
-	1050 2500 2200 2500
-Wire Wire Line
 	2200 2700 1050 2700
 Wire Wire Line
-	1050 2800 2200 2800
-Wire Wire Line
-	1050 2900 2200 2900
-Wire Wire Line
-	2200 3000 1050 3000
-Wire Wire Line
-	1050 3100 2200 3100
-Wire Wire Line
-	1050 3200 2200 3200
-Wire Wire Line
-	2700 3100 3750 3100
-Wire Wire Line
-	2700 3200 3750 3200
-Wire Wire Line
-	2700 2600 3750 2600
-Wire Wire Line
 	2700 2700 3750 2700
-Wire Wire Line
-	2700 2400 3750 2400
-Wire Wire Line
-	2700 2500 3750 2500
-Wire Wire Line
-	2700 2100 3750 2100
-Wire Wire Line
-	2700 2200 3750 2200
-Wire Wire Line
-	2700 1800 3750 1800
-Wire Wire Line
-	2700 1900 3750 1900
-Wire Wire Line
-	2700 1700 3750 1700
-Wire Wire Line
-	2700 2900 3750 2900
-Text Label 1050 1500 0    50   ~ 0
-GPIO2(SDA1)
-Text Label 1050 1600 0    50   ~ 0
-GPIO3(SCL1)
-Text Label 1050 1700 0    50   ~ 0
-GPIO4(GCLK)
-Text Label 1050 1900 0    50   ~ 0
-GPIO17(GEN0)
-Text Label 1050 2000 0    50   ~ 0
-GPIO27(GEN2)
-Text Label 1050 2100 0    50   ~ 0
-GPIO22(GEN3)
-Text Label 1050 2300 0    50   ~ 0
-GPIO10(SPI0_MOSI)
-Text Label 1050 2400 0    50   ~ 0
-GPIO9(SPI0_MISO)
-Text Label 1050 2500 0    50   ~ 0
-GPIO11(SPI0_SCK)
 Text Label 1050 2700 0    50   ~ 0
 ID_SD
-Text Label 1050 2800 0    50   ~ 0
-GPIO5
-Text Label 1050 2900 0    50   ~ 0
-GPIO6
-Text Label 1050 3000 0    50   ~ 0
-GPIO13(PWM1)
-Text Label 1050 3100 0    50   ~ 0
-GPIO19(SPI1_MISO)
-Text Label 1050 3200 0    50   ~ 0
-GPIO26
-Text Label 3750 3200 2    50   ~ 0
-GPIO20(SPI1_MOSI)
-Text Label 3750 3100 2    50   ~ 0
-GPIO16
-Text Label 3750 2900 2    50   ~ 0
-GPIO12(PWM0)
 Text Label 3750 2700 2    50   ~ 0
 ID_SC
-Text Label 3750 2600 2    50   ~ 0
-GPIO7(SPI1_CE_N)
-Text Label 3750 2500 2    50   ~ 0
-GPIO8(SPI0_CE_N)
-Text Label 3750 2400 2    50   ~ 0
-GPIO25(GEN6)
-Text Label 3750 2200 2    50   ~ 0
-GPIO24(GEN5)
-Text Label 3750 2100 2    50   ~ 0
-GPIO23(GEN4)
-Text Label 3750 1900 2    50   ~ 0
-GPIO18(GEN1)(PWM0)
-Text Label 3750 1800 2    50   ~ 0
-GPIO15(RXD0)
-Text Label 3750 1700 2    50   ~ 0
-GPIO14(TXD0)
 Wire Wire Line
 	2800 1600 2700 1600
 Connection ~ 2800 2000
@@ -253,10 +159,6 @@ F 3 "" H -2450 1350 50  0001 C CNN
 	1    2400 2300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2700 3300 3750 3300
-Text Label 3750 3300 2    50   ~ 0
-GPIO21(SPI1_SCK)
 Wire Wire Line
 	2900 1400 2900 1500
 Wire Wire Line
@@ -1186,4 +1088,38 @@ Wire Wire Line
 	3150 5050 3550 5050
 Wire Wire Line
 	3550 5050 3550 4800
+NoConn ~ 3750 2700
+NoConn ~ 1050 2700
+NoConn ~ 2700 2900
+NoConn ~ 2700 3100
+NoConn ~ 2700 3200
+NoConn ~ 2700 3300
+NoConn ~ 2200 2800
+NoConn ~ 2200 2900
+NoConn ~ 2200 3000
+NoConn ~ 2200 3100
+NoConn ~ 2200 3200
+NoConn ~ 2700 2100
+NoConn ~ 2700 2200
+NoConn ~ 2700 2400
+NoConn ~ 2700 2500
+NoConn ~ 2700 2600
+NoConn ~ 2200 2300
+NoConn ~ 2200 2400
+NoConn ~ 2200 2500
+NoConn ~ 2200 1500
+NoConn ~ 2200 1600
+NoConn ~ 2200 1700
+NoConn ~ 2700 1700
+NoConn ~ 2700 1800
+Text Label 3450 1900 0    50   ~ 0
+PWM_Pin
+Wire Wire Line
+	2700 1900 3450 1900
+Text Label 1050 1900 0    50   ~ 0
+Thermal_Pin
+Text Label 1050 2000 0    50   ~ 0
+Shutdown_Pin
+Text Label 1050 2100 0    50   ~ 0
+Reboot_Pin
 $EndSCHEMATC
