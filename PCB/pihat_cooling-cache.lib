@@ -416,6 +416,23 @@ X C 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# pihat_cooling_DS3231_RTC_Module
+#
+DEF pihat_cooling_DS3231_RTC_Module U 0 40 Y Y 1 F N
+F0 "U" 0 300 50 H V C CNN
+F1 "pihat_cooling_DS3231_RTC_Module" 0 -300 50 H V C CNN
+F2 "pihat_cooling:DS3231_RTC_Module" 250 -400 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+DRAW
+S -50 250 200 -250 0 1 0 N
+P 2 0 1 0 -50 0 200 0 N
+X GND 1 -150 150 100 R 50 50 1 1 I
+X VCC 2 -150 50 100 R 50 50 1 1 I
+X SDA 3 -150 -50 100 R 50 50 1 1 I
+X SCL 4 -150 -150 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # power_+12V
 #
 DEF power_+12V #PWR 0 0 Y Y 1 F P
