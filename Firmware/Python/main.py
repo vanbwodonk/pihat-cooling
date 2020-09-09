@@ -2,7 +2,6 @@
 import time
 import threading
 import os
-import subprocess
 import RPi.GPIO as GPIO
 
 # pihat pin
@@ -51,11 +50,11 @@ try:
         if GPIO.input(reboot_pin) == GPIO.LOW:
             print("Reboot button pressed")
             time.sleep(5)
-            subprocess.call("reboot")
+            os.system("sudo reboot")
         if GPIO.input(shutdown_pin) == GPIO.LOW:
             print("Shutdown button pressed")
             time.sleep(5)
-            subprocess.call(["shutdown", "-r", "now"])
+            os.system("sudo shutdown -h now")
 
         time.sleep(2)
 
