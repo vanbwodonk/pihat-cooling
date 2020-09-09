@@ -357,8 +357,6 @@ $EndComp
 Wire Wire Line
 	9200 2225 9200 2025
 Wire Wire Line
-	9200 2025 8450 2025
-Wire Wire Line
 	9200 1925 9200 2025
 Connection ~ 9200 2025
 Connection ~ 7950 2775
@@ -1136,4 +1134,19 @@ Wire Wire Line
 NoConn ~ 2700 1900
 NoConn ~ 2200 2000
 NoConn ~ 2200 2100
+$Comp
+L power:+5VP #PWR?
+U 1 1 5F5A5A44
+P 8750 1925
+F 0 "#PWR?" H 8750 1775 50  0001 C CNN
+F 1 "+5VP" H 8725 2075 50  0000 C CNN
+F 2 "" H 8750 1925 50  0001 C CNN
+F 3 "" H 8750 1925 50  0001 C CNN
+	1    8750 1925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 2025 8750 2025
+Wire Wire Line
+	8750 2025 8750 1925
 $EndSCHEMATC
