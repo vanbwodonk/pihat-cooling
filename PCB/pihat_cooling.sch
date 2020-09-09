@@ -360,23 +360,8 @@ Wire Wire Line
 	9200 1925 9200 2025
 Connection ~ 9200 2025
 Connection ~ 7950 2775
-$Comp
-L Device:CP C4
-U 1 1 5F3BB6A4
-P 9500 2375
-F 0 "C4" H 9618 2421 50  0000 L CNN
-F 1 "CP" H 9618 2330 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D7.5mm_P2.50mm" H 9538 2225 50  0001 C CNN
-F 3 "~" H 9500 2375 50  0001 C CNN
-	1    9500 2375
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9200 2025 9400 2025
-Wire Wire Line
-	9500 2025 9500 2225
-Wire Wire Line
-	9500 2525 9500 2775
 Wire Wire Line
 	8450 2225 8550 2225
 Wire Wire Line
@@ -423,9 +408,6 @@ Wire Wire Line
 	8550 2625 8550 2775
 Wire Wire Line
 	7950 2775 8550 2775
-Connection ~ 8550 2775
-Wire Wire Line
-	8550 2775 9500 2775
 Text Notes 5925 975  0    98   ~ 20
 5V Switching Regulator
 Wire Notes Line
@@ -757,11 +739,6 @@ F 3 "~" H 9600 1975 50  0001 C CNN
 	1    9400 1975
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9400 1975 9400 2025
-Connection ~ 9400 2025
-Wire Wire Line
-	9400 2025 9500 2025
 $Comp
 L Connector:TestPoint TP2
 U 1 1 5F597172
@@ -1135,10 +1112,10 @@ NoConn ~ 2700 1900
 NoConn ~ 2200 2000
 NoConn ~ 2200 2100
 $Comp
-L power:+5VP #PWR?
+L power:+5VP #PWR0101
 U 1 1 5F5A5A44
 P 8750 1925
-F 0 "#PWR?" H 8750 1775 50  0001 C CNN
+F 0 "#PWR0101" H 8750 1775 50  0001 C CNN
 F 1 "+5VP" H 8725 2075 50  0000 C CNN
 F 2 "" H 8750 1925 50  0001 C CNN
 F 3 "" H 8750 1925 50  0001 C CNN
@@ -1149,4 +1126,6 @@ Wire Wire Line
 	8450 2025 8750 2025
 Wire Wire Line
 	8750 2025 8750 1925
+Wire Wire Line
+	9400 1975 9400 2025
 $EndSCHEMATC
