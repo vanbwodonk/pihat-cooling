@@ -33,20 +33,18 @@ try:
         temp = float('%.2f' % temp)
         file.close()
         print("temp : %.2f %sC" % (temp, chr(176)))
-
+        dc = 0
         if(temp > 40):
             dc = 40
-        elif(temp > 50):
+        if(temp > 50):
             dc = 50
-        elif(temp > 60):
+        if(temp > 60):
             dc = 60
-        elif(temp > 70):
+        if(temp > 70):
             dc = 80
-        elif(temp > 80):
+        if(temp > 80):
             dc = 100
-        else:
-            dc = 0
-        
+
         pwm.ChangeDutyCycle(dc)
         print("Fan duty cycle : ", dc)
 
