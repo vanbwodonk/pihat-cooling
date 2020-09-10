@@ -32,11 +32,12 @@ try:
         temp = float('%.2f' % temp)
         file.close()
         print("temp : %.2f %sC" % (temp, chr(176)))
-        dc = 0
-        if(temp > 40):
-            dc = 40
+        if(temp < 40):
+            dc = 0
+        if(temp > 45):
+            dc = 20
         if(temp > 50):
-            dc = 50
+            dc = 40
         if(temp > 60):
             dc = 60
         if(temp > 70):
