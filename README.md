@@ -7,19 +7,17 @@ Raspberry Pi Hat with fan controller and external power supply. Raspberry pi nee
 
 ## Features
 
-1. Cheap. At least from my local shop.
+1. Wide range DC power input up to 40 Volt (or battery for my application).
 
-2. Wide range DC power input up to 40 Volt (or battery for my application).
+2. Fan controller with switchable 5 volt or direct DC in supply. Change **J2** jumper close to pi header for 5 Volt fan supply or jumper close to button for direct DC supply. Usually pi fan is for 5 Volt, but i try 5 volt fan with 12 volt battery is no problem at all.
 
-3. Fan controller with switchable 5 volt or direct DC in supply. Change **J2** jumper close to pi header for 5 Volt fan supply or jumper close to button for direct DC supply. Usually pi fan is for 5 Volt, but i try 5 volt fan with 12 volt battery is no problem at all.
+3. Overheat indicator with led (1 led programmable).
 
-4. Overheat indicator with led (1 led programmable).
-
-5. Over voltage + Reverse protection.
+4. Over voltage + Reverse protection.
 
    You can replace all components. Just a little note for **Q1** and **Q3** (P-Channel Mosfet) drain current is 3 Ampere or more.
 
-6. 2 programmable button (i used it for shutdown & reboot). 
+5. 2 programmable button (i used it for shutdown & reboot). 
 
 ## Installation
 
