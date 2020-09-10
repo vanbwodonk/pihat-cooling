@@ -1,7 +1,7 @@
 # Pihat-cooling
 https://github.com/vanbwodonk/pihat-cooling
 
-Raspberry Pi Hat with fan controller and external power supply. Raspberry pi need 5 Volt 15 watt power supply, this Pi Hat can replace it with 9/12 Volt power supply 18 watt or more. 
+Raspberry Pi Hat with fan controller and external power supply. Raspberry pi need 5 Volt 15 watt power supply, this Pi Hat can replace it with 9/12 Volt power supply 18 watt or more. PCB is design with KiCad 5.1.
 
 ![](docs/pihat_cooling_3D.png)
 
